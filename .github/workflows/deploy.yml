@@ -17,14 +17,16 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '14'
-
+      - name: cding..
+        run: cd my-first-react-app
+        
       - name: Install dependencies
         run: npm install
 
       - name: Build the React app
-        run: npm run build:my-first-react-app
+        run: npm run build
 
       - name: Deploy to GitHub Pages
-        run: npm run deploy:my-first-react-app
+        run: npm run deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
