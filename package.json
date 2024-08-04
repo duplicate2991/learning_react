@@ -9,6 +9,9 @@
     "deploy": "gh-pages -d build"
   },
   "keywords": [],
+  "dependencies": {
+  "gh-pages": "^3.2.3"
+  },
   "author": "",
   "license": "ISC",
   "description": ""
